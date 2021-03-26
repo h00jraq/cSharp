@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piatek_26_03_21", "Piatek_26_03_21\Piatek_26_03_21.csproj", "{5F597D88-19F7-4AE1-B275-0095114CA8B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piatek_26_03_21_TEST", "Piatek_26_03_21_TEST\Piatek_26_03_21_TEST.csproj", "{A38ABE10-6393-4C2D-9696-D933F31A9010}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F597D88-19F7-4AE1-B275-0095114CA8B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F597D88-19F7-4AE1-B275-0095114CA8B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F597D88-19F7-4AE1-B275-0095114CA8B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F597D88-19F7-4AE1-B275-0095114CA8B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A38ABE10-6393-4C2D-9696-D933F31A9010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A38ABE10-6393-4C2D-9696-D933F31A9010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A38ABE10-6393-4C2D-9696-D933F31A9010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A38ABE10-6393-4C2D-9696-D933F31A9010}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EADFEED6-138E-44A5-895B-D6E1537DC605}
+	EndGlobalSection
+EndGlobal
