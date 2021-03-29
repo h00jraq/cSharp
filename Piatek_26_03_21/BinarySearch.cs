@@ -19,13 +19,16 @@ namespace Piatek_26_03_21
                 int middle = (left + right) / 2;
                 if (value == array[middle])
                     return middle;
+                else if ((value > array[array.Length-1] || value < array[left]))
+                    break;
                 else if (value < array[middle])
                     right = middle;
                 else if (value > array[middle])
                 {
                     left = middle;
-                    right = array.Length - 1;
+                    right = array.Length;
                 }
+
             }
             return null;
         }
