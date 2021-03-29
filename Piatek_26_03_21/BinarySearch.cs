@@ -20,9 +20,10 @@ namespace Piatek_26_03_21
                 if (value == array[middle])
                     return middle;
                 else if (value < array[middle])
-                    right = array.Length - middle;
+                    right = middle;
                 else if (value > array[middle])
-                    left += middle;
+                    left = middle;
+                right = array.Length-1;
 
             }
             return null;
