@@ -26,12 +26,39 @@ namespace Piatek_26_03_21_TEST
             //Arrange - test preparation
             int[] myArray = { 1, 3, 5, 7, 11, 21, 24, 100 };
             var binarySearch = new BinarySearch();
-            var value = 21;
-            var expectedIndex = 2;
+            var value = 120;
+            //int? expectedIndex = null;
             //Act - calling tested method
-            var index = binarySearch.Search(myArray, value);
+            int? index = binarySearch.Search(myArray, value);
             //Assert - checking test result
-            Assert.Equal(expectedIndex, index);
+            Assert.Null(index);
+        }
+        [Fact] //read about [Theory]
+        public void Given_EmptyArray_When_SearchMethodCalled_Then_ReturnNull()
+        {
+            //Arrange - test preparation
+            int[] myArray =  Array.Empty<int>();
+            var binarySearch = new BinarySearch();
+            var value = 120;
+            //int? expectedIndex = null;
+            //Act - calling tested method
+            int? index = binarySearch.Search(myArray, value);
+            //Assert - checking test result
+            Assert.Null(index);
+        }
+
+        [Fact] //read about [Theory]
+        public void Given_NonSrotedArray_When_SearchMethodCalled_Then_ReturnNull()
+        {
+            //Arrange - test preparation
+            int[] myArray = { 1, 3, 2, 11, 7, 21, 24, 100 };
+            var binarySearch = new BinarySearch();
+            var value = 120;
+            //int? expectedIndex = null;
+            //Act - calling tested method
+            int? index = binarySearch.Search(myArray, value);
+            //Assert - checking test result
+            Assert.Null(index);
         }
     }
 }

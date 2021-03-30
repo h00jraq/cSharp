@@ -13,7 +13,7 @@ namespace Piatek_26_03_21
             int? index = binarySearch.Search(myArray, 0);
             if (index != null)
                 Console.WriteLine(index);
-            else;
+            else
                 Console.WriteLine("Index not found");
         }
     }
