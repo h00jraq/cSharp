@@ -15,7 +15,7 @@ namespace Piatek_26_03_21
             int right = array.Length - 1;
 
             while (left <= right)
-            {
+            /* {
                 int middle = (left + right) / 2;
                 if (value == array[middle])
                     return middle;
@@ -28,6 +28,16 @@ namespace Piatek_26_03_21
                     left = middle;
                     right = array.Length;
                 }
+
+            } */
+            {
+                int middle = (left + right) / 2;
+                if (value == array[middle]) 
+                    return middle;
+                if (value < array[middle])
+                    right = middle - 1;
+                else
+                    left = middle + 1;
 
             }
             return null;

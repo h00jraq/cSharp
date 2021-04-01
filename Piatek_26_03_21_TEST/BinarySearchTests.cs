@@ -20,7 +20,7 @@ namespace Piatek_26_03_21_TEST
             Assert.Equal(expectedIndex, index);
         }
 
-        [Fact] //read about [Theory]
+        [Fact] 
         public void Given_ArrayOfSortedElements_When_SearchMethodCalled_Then_IndexOfElementNotFound()
         {
             //Arrange - test preparation
@@ -33,7 +33,7 @@ namespace Piatek_26_03_21_TEST
             //Assert - checking test result
             Assert.Null(index);
         }
-        [Fact] //read about [Theory]
+        [Fact] 
         public void Given_EmptyArray_When_SearchMethodCalled_Then_ReturnNull()
         {
             //Arrange - test preparation
@@ -47,8 +47,22 @@ namespace Piatek_26_03_21_TEST
             Assert.Null(index);
         }
 
-        [Fact] //read about [Theory]
-        public void Given_NonSrotedArray_When_SearchMethodCalled_Then_ReturnNull()
+        [Fact] 
+        public void Given_NotSrotedArray_When_SearchMethodCalled_Then_ReturnNull()
+        {
+            //Arrange - test preparation
+            int[] myArray = { 1, 3, 2, 11, 7, 21, 24, 100 };
+            var binarySearch = new BinarySearch();
+            var value = 120;
+            //int? expectedIndex = null;
+            //Act - calling tested method
+            int? index = binarySearch.Search(myArray, value);
+            //Assert - checking test result
+            Assert.Null(index);
+        }
+
+        [Fact] 
+        public void Given_ArrayWithDuplicatedElements_When_SearchMethodCalled_Then_ReturnNull()
         {
             //Arrange - test preparation
             int[] myArray = { 1, 3, 2, 11, 7, 21, 24, 100 };
